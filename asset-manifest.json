@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/practic_website_MOVIE/static/css/main.0a90113f.css",
+    "main.js": "/practic_website_MOVIE/static/js/main.782539a6.js",
+    "static/media/army-soldier-holding-rifle-standing-nature-generated-by-ai.jpg": "/practic_website_MOVIE/static/media/army-soldier-holding-rifle-standing-nature-generated-by-ai.41b9581bf1b83e3315d4.jpg",
+    "index.html": "/practic_website_MOVIE/index.html",
+    "main.0a90113f.css.map": "/practic_website_MOVIE/static/css/main.0a90113f.css.map",
+    "main.782539a6.js.map": "/practic_website_MOVIE/static/js/main.782539a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a90113f.css",
+    "static/js/main.782539a6.js"
+  ]
+}
