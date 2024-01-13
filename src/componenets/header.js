@@ -27,7 +27,7 @@ let Header = ({search}) => {
             <Container>
              <div className='navber'>
                 <div className='logoheader'>
-                    <img src={process.env.PUBLIC_URL + '/logo2.png'}/>
+                    <img src={process.env.PUBLIC_URL + 'logo2.png'}/>
                 </div>
 
                 <nav className={active ? "open" : "close"}>
