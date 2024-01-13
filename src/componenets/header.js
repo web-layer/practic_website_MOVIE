@@ -63,7 +63,7 @@ let Header = ({search}) => {
                         </select>
 
                         <div  onClick={() => setactive(!active)} className='menu'>
-                            <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-bars"></i>
                         </div>
 
                         <button className='btnSIGN'>SIGN IN</button>
