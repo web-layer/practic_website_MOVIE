@@ -27,13 +27,13 @@ let Header = ({search}) => {
             <Container>
              <div className='navber'>
                 <div className='logoheader'>
-                    <img src='/logo2.png'/>
+                    <img src={process.env.PUBLIC_URL + '/logo2.png'}/>
                 </div>
 
                 <nav className={active ? "open" : "close"}>
 
                 <div className='logo'>
-                    <img  src='/logo2.png'/>
+                    <img  src='logo2.png'/>
 
                     <div className='close' onClick={() => setactive(!active)} >
                     <i class="fa-solid fa-square-xmark"></i>

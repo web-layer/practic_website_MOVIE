@@ -22,10 +22,6 @@ console.log(showHero)
        .then((listMovies) => {return getMovies(listMovies.results)})
    }
 
-   useEffect(() => {
-       getAllMovies()
-   }, [])
-
 
    let searchmovies = async(word) => {
         let x = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=2ed27428d49a7dff95d8705d52d37dee&query=${word}&include_adult=false&language=en-US&page=1`)
@@ -36,22 +32,25 @@ console.log(showHero)
 
 
 
+   useEffect(() => {
+      getAllMovies()
+  }, [])
 
   
 
 
    return (
+      <BrowserRouter>
+              <Header search={searchmovies}></Header>
+        {showHero && <HeroContent />}
       <>
-         <Header search={searchmovies}></Header>
-         {showHero && <HeroContent/>}
-         <BrowserRouter>
-            <Routes>
-               <Route  path='/' element={ <SectionUpcoming movies={Movies}></SectionUpcoming>}/>
-               <Route  path='/movie/:id' element={<MoviesDetails setHero={setHero}/>}/>
-            </Routes>
-         </BrowserRouter>
-<Footer></Footer>
+        <Routes>
+        <Route path="*" element={<SectionUpcoming movies={Movies} />} />
+                 <Route path="/movie/:id" element={<MoviesDetails setHero={setHero} />} />
+        </Routes>
       </>
+              <Footer></Footer>
+    </BrowserRouter>
    )
 }
 

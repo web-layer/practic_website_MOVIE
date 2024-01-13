@@ -11,7 +11,8 @@ let cartMovies = ({movie}) => {
             <Link to={`/movie/${movie.id}`}>
             <div className="cart">
                 <figure className="img">
-                  <img src={"https://image.tmdb.org/t/p/w500/"+movie.poster_path}/>
+                <img src={"https://image.tmdb.org/t/p/w500/"+movie.poster_path}/>
+
                 </figure>
                     <div className="infoMoveis">
                     <div>

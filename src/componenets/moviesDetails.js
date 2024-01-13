@@ -1,8 +1,6 @@
 import React, { useEffect, useState }   from "react"
 import { Container } from "react-bootstrap";
-import {BrowserRouter, Routes, Route, useParams} from 'react-router-dom';
-//https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/rLb2cwF3Pazuxaj0sRXQ037tGI1.jpg
-//https://api.themoviedb.org/3/movie/572802?api_key=2ed27428d49a7dff95d8705d52d37dee&page=1&!language=en-US
+import { useParams} from 'react-router-dom';
 let MoviesDetails = ({setHero}) => {
     let idMovies = useParams()
     let [detailsMovies, setdetailsMovies] = useState([])
