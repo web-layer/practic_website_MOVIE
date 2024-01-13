@@ -6,7 +6,7 @@ let Footer = () => {
             <Container>
                 <div className="content-footer">
                     <div className="footer-logo">
-                         <img width="200px" src={process.env.PUBLIC_URL + '/logo2.png'}/>
+                         <img width="200px" src={process.env.PUBLIC_URL + 'logo2.png'}/>
                     </div>
                     <div className="nav">
                         <ul>
