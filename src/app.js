@@ -40,7 +40,7 @@ console.log(showHero)
 
 
    return (
-      <BrowserRouter>
+      <BrowserRouter  basename='/practic_website_MOVIE'>
               <Header search={searchmovies}></Header>
         {showHero && <HeroContent />}
       <>
